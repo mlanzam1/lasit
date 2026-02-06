@@ -1484,7 +1484,7 @@ body {
 
     .hero-section {
         /* Aseguramos que el contenido no quede pegado arriba en móviles */
-        padding-top: 40px; 
+        padding-top: 30px; 
         align-items: center;
     }
 
@@ -1499,3 +1499,4 @@ body {
         text-align: center;
     }
 }
+
