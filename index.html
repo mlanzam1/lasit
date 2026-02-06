@@ -1,0 +1,702 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Cero Baches | HONDURAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.26.0/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    @*Empieza Hero*@
+    <header class="hero-section">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="hero-glass-card">
+                        <h1 class="hero-title">
+                            Programa <br>
+                            <span>Cero Baches</span>
+                        </h1>
+                        <p class="hero-description">
+                            Transformando a Honduras con una red vial digna, segura y moderna para todos los HONDUREÑOS.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#botonnoticias" class="btn-hero">Ver Avances</a>
+                            <a href="#botonArriba" class="btn btn-outline-light px-4 py-3 border-2 fw-bold" style="border-radius: 5px; text-transform: uppercase; letter-spacing: 1px;">
+                                Mapa en Vivo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    @*Termina Hero*@
+
+    @*Empieza Sobre*@
+    <section class="section about-program institutional">
+        <div class="container">
+
+            <div class="text-center institutional-header">
+                <span class="section-badge">Programa Nacional de Infraestructura Vial</span>
+                <h2 class="section-title">¿Qué es Cero Baches?</h2>
+                <div class="institutional-divider"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="institutional-card text-center">
+                        <p class="institutional-text">
+                            El <strong>Programa Cero Baches</strong> es una iniciativa de carácter nacional
+                            orientada a la recuperación, mantenimiento y mejora continua de la red vial
+                            urbana y rural de la República de Honduras.
+                        </p>
+
+                        <p class="institutional-text">
+                            Su implementación busca garantizar condiciones adecuadas de transitabilidad,
+                            seguridad vial y conectividad territorial, contribuyendo al desarrollo económico,
+                            social y productivo del país.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row text-center institutional-pillars">
+
+                <div class="col-md-4">
+                    <div class="pillar">
+                        <span class="pillar-number">I</span>
+                        <h5>Alcance Nacional</h5>
+                        <p>Intervenciones en los 18 departamentos del país</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="pillar">
+                        <span class="pillar-number">II</span>
+                        <h5>Gestión Técnica</h5>
+                        <p>Planificación, ejecución y supervisión especializada</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="pillar">
+                        <span class="pillar-number">III</span>
+                        <h5>Transparencia</h5>
+                        <p>Seguimiento público y rendición de cuentas</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    @*Termina Sobre*@
+
+    @*Empieza Estadisticas*@
+<section class="section stats-impact full-width-section">
+    <div class="stats-overlay"></div>
+
+    <div class="container-fluid px-md-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-5">
+                <span class="section-badge-light">Resultados en Tiempo Real</span>
+                <h2 class="stats-main-title">Impacto en la Red Vial Nacional</h2>
+                <div class="institutional-divider-gold"></div>
+            </div>
+        </div>
+
+        <div class="row g-4 px-2">
+            <div class="col-lg-4 col-md-6">
+                <div class="stat-card featured">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter">1,248</h3>
+                        <p>Calles Reparadas</p>
+                        <div class="stat-progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="stat-card featured">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter">312<span>km</span></h3>
+                        <p>Intervenidos</p>
+                        <div class="stat-progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="stat-card featured">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter">18</h3>
+                        <p>Departamentos</p>
+                        <div class="stat-progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id ="botonArriba"></div>
+</section>
+    @*Termina Estadisticas*@
+
+
+    @*MAPA DE HONDURAS*@
+    <section id="mapa" class="map-section-fluid container-fluid px-0">
+        <div class="map-header-institutional">
+            <div  class="container">
+                <span class="section-badge">Geolocalización en Tiempo Real</span>
+                <h2 class="section-title text-white mb-2">Mapa de Intervenciones Estratégicas</h2>
+                <div class="institutional-divider"></div>
+                <p class="map-subtitle">Infraestructura y Cuadrillas de Mantenimiento Operativo</p>
+            </div>
+        </div>
+
+        <div class="map-full-container">
+            <div class="map-wrapper-large">
+                <iframe class="map-frame-full"
+                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Honduras&t=&z=8&ie=UTF8&iwloc=B&output=embed"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen>
+                </iframe>
+
+                <div class="map-legend-floating d-none d-md-block">
+                    <div class="legend-item"><span class="dot active"></span> Intervención Activa</div>
+                    <div class="legend-item"><span class="dot planned"></span> Programada</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*TERMINA MAPA DE HONDURAS :(*@
+
+    @*2 Separadores*@
+    <div class="container my-3 py-4">
+        <hr style="opacity: 0.1; border-top: 2px solid var(--gold); width: 0%; margin: 0 auto;">
+    </div>
+    @*2 Separadores*@
+
+    @*Empieza Procesos*@
+<section class="section process">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge">Metodología</span>
+            <h2 class="section-title">Proceso de Intervención</h2>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-3 process-step">
+                <span class="step-number">01</span>
+                <h5>Diagnóstico</h5>
+                <p>Evaluación técnica del estado vial</p>
+            </div>
+            <div class="col-md-3 process-step">
+                <span class="step-number">02</span>
+                <h5>Planificación</h5>
+                <p>Planificación, Priorización y Diseño Priorización</p>
+            </div>
+            <div class="col-md-3 process-step">
+                <span class="step-number">03</span>
+                <h5>Ejecución</h5>
+                <p>Ejecución, Intervención y Control Intervención en campo</p>
+            </div>
+            <div class="col-md-3 process-step">
+                <span class="step-number">04</span>
+                <h5>Supervisión</h5>
+                <p>Control de calidad y seguimiento</p>
+            </div>
+        </div>
+    </div>
+    <div id="botonnoticias"></div>
+</section>
+    @*Termina Procesos*@
+
+    
+
+    @*Empieza carrusel*@
+    <main id="noticias" class="container news-section">
+
+        <div class="text-center mb-1">
+            <span class="section-badge">Actualidad y Transparencia</span>
+            <h2 class="section-title" style="margin-bottom: 0.2rem;">Ultimas Noticias</h2>
+            <hr style="margin-top: 0; opacity: 1; border-top: 3px solid var(--gold); width: 100%; margin-left: auto; margin-right: auto;">
+        </div>
+
+        @*Noticias grande*@
+        <div class="row mb-1">
+            <div class="col-12">
+                <article class="news-feature">
+                    <img src="https://visitarhonduras.com/wp-content/uploads/2025/05/Cuando-viajar-a-Tegucigalpa-Informacion-util-y-clima.jpg" alt="Noticia principal">
+                    <div class="news-feature-content">
+                        <span class="news-category">Infraestructura</span>
+                        <span class="news-date">03 Febrero 2026</span>
+                        <h3>Inicio de Obras del Anillo Periférico</h3>
+                        <p>
+                            Se da inicio oficial a uno de los proyectos viales más importantes de la ciudad,
+                            mejorando la movilidad y reduciendo tiempos de traslado.
+                        </p>
+                        <a href="#" class="btn btn-custom">Leer nota completa</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        @*Termina Noticias Grandes*@
+
+        @*Noticias Pequeñas*@
+        <div id="secondaryNewsCarousel"
+             class="carousel slide"
+             data-bs-ride="carousel"
+             data-bs-interval="6000"
+             data-bs-pause="false">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="news-card framed">
+                                <img src="https://visitarhonduras.com/wp-content/uploads/2025/05/Cuando-viajar-a-Tegucigalpa-Informacion-util-y-clima.jpg">
+                                <div class="news-card-body">
+                                    <span class="news-category">Comunidad</span>
+                                    <span class="news-date">02 Feb 2026</span>
+                                    <h5>Rehabilitación de la Colonia Kennedy</h5>
+                                    <p>Más de 50,000 vecinos beneficiados con obras viales.</p>
+                                    <a href="#">Leer más →</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="news-card framed">
+                                <img src="https://visitarhonduras.com/wp-content/uploads/2025/05/Cuando-viajar-a-Tegucigalpa-Informacion-util-y-clima.jpg">
+                                <div class="news-card-body">
+                                    <span class="news-category">Gestión</span>
+                                    <span class="news-date">01 Feb 2026</span>
+                                    <h5>Cuadrillas Nocturnas en Operación</h5>
+                                    <p>Reducción de tráfico en horarios pico.</p>
+                                    <a href="#">Leer más →</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <article class="news-card framed">
+                                <img src="https://visitarhonduras.com/wp-content/uploads/2025/05/Cuando-viajar-a-Tegucigalpa-Informacion-util-y-clima.jpg">
+                                <div class="news-card-body">
+                                    <span class="news-category">Seguridad Vial</span>
+                                    <span class="news-date">30 Ene 2026</span>
+                                    <h5>Señalización de Pasos Peatonales</h5>
+                                    <p>Mejorando la seguridad del peatón.</p>
+                                    <a href="#">Leer más →</a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="news-card framed">
+                                <img src="https://visitarhonduras.com/wp-content/uploads/2025/05/Cuando-viajar-a-Tegucigalpa-Informacion-util-y-clima.jpg">
+                                <div class="news-card-body">
+                                    <span class="news-category">Urbanismo</span>
+                                    <span class="news-date">29 Ene 2026</span>
+                                    <h5>Ordenamiento del Centro Histórico</h5>
+                                    <p>Recuperación de espacios públicos.</p>
+                                    <a href="#">Leer más →</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="news-card framed">
+                                <img src="https://visitarhonduras.com/wp-content/uploads/2025/05/Cuando-viajar-a-Tegucigalpa-Informacion-util-y-clima.jpg">
+                                <div class="news-card-body">
+                                    <span class="news-category">Vialidad</span>
+                                    <span class="news-date">27 Ene 2026</span>
+                                    <h5>Mantenimiento en Blvd. Suyapa</h5>
+                                    <p>Bacheo intensivo en tramos críticos.</p>
+                                    <a href="#">Leer más →</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <article class="news-card framed">
+                                <img src="https://visitarhonduras.com/wp-content/uploads/2025/05/Cuando-viajar-a-Tegucigalpa-Informacion-util-y-clima.jpg">
+                                <div class="news-card-body">
+                                    <span class="news-category">Emergencia</span>
+                                    <span class="news-date">26 Ene 2026</span>
+                                    <h5>Respuesta Inmediata por Lluvias</h5>
+                                    <p>Cuadrillas activas 24/7.</p>
+                                    <a href="#">Leer más →</a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        @*Termina Noticias Pequeñas*@
+    </main>
+    @*Termina carrusel*@
+
+
+    @*Empieza Tabla*@
+    <section class="section transparency-table">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-badge">Rendición de Cuentas</span>
+                <h2 class="section-title">Transparencia y Datos Abiertos</h2>
+                <div class="institutional-divider"></div>
+                <p class="news-intro">
+                    Información pública sobre proyectos, inversión y estado de ejecución
+                    del Programa Cero Baches.
+                </p>
+            </div>
+
+            <div class="table-responsive">
+                <table id="table"
+                       class="table table-bordered"
+                       data-toggle="table"
+                       data-search="true"
+                       data-pagination="true"
+                       data-page-size="10"
+                       data-page-list="[10, 25, 50, 100]"
+                       data-show-export="true"
+                       data-export-types="['csv','excel','pdf']"
+                       data-show-columns="true"
+                       data-locale="es-ES">
+
+                    <thead>
+                        <tr>
+                            <th data-field="departamento" data-sortable="true">Departamento</th>
+                            <th data-field="municipio" data-sortable="true">Municipio</th>
+                            <th data-field="proyecto" data-sortable="true">Proyecto</th>
+                            <th data-field="estado" data-sortable="true">Estado</th>
+                            <th data-field="avance" data-sortable="true">Avance (%)</th>
+                            <th data-field="inversion" data-sortable="true">Inversión (L)</th>
+                            <th data-field="fecha" data-sortable="true">Última Actualización</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Morazán</td>
+                            <td>Tegucigalpa</td>
+                            <td>Bacheo Anillo Periférico</td>
+                            <td>En Ejecución</td>
+                            <td>65</td>
+                            <td>12,500,000</td>
+                            <td>03/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Cortés</td>
+                            <td>San Pedro Sula</td>
+                            <td>Rehabilitación Blvd. del Norte</td>
+                            <td>Finalizado</td>
+                            <td>100</td>
+                            <td>8,200,000</td>
+                            <td>28/01/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Olancho</td>
+                            <td>Juticalpa</td>
+                            <td>Mantenimiento Red Urbana</td>
+                            <td>Programado</td>
+                            <td>0</td>
+                            <td>4,300,000</td>
+                            <td>15/02/2026</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </section>
+    @*Termina Tabla*@
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.29.0/tableExport.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.26.0/dist/bootstrap-table.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.26.0/dist/bootstrap-table-locale-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.26.0/dist/extensions/export/bootstrap-table-export.min.js"></script>
+
+</body>
+</html>
