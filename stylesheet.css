@@ -1375,3 +1375,68 @@ html, body {
     max-width: 500px;
     margin: 0 auto;
 }
+
+/* --- AJUSTES PARA MÓVIL (Smartphones) --- */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 0 60px 0; /* Espacio para el header fijo */
+        background-attachment: scroll; /* Mejor rendimiento en móviles */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-glass-card {
+        padding: 40px 20px;
+        border-radius: 20px; /* Bordes redondeados completos en móvil */
+        border-left: none;
+        border-top: 8px solid var(--gold);
+        backdrop-filter: blur(15px);
+        margin: 0 10px;
+    }
+
+    .hero-title {
+        font-size: 2.8rem; /* Tamaño legible en móvil */
+        line-height: 1.1;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    /* Contenedor de botones en vertical para móviles */
+    .hero-buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn-hero, .btn-map-outline {
+        width: 100%; /* Botones de ancho completo */
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* Estilo para el botón outline que estaba inline */
+    .btn-map-outline {
+        border: 2px solid var(--white);
+        color: var(--white);
+        padding: 15px 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: var(--transition);
+    }
+}
+
+/* Ajuste extra para pantallas muy pequeñas */
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+}
