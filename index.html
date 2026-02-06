@@ -57,6 +57,36 @@
     </header>
     @*Termina Hero*@
 
+      @*MAPA DE HONDURAS*@
+    <section id="mapa" class="map-section-fluid container-fluid px-0">
+        <div class="map-header-institutional">
+            <div  class="container">
+                <span class="section-badge">Geolocalización en Tiempo Real</span>
+                <h2 class="section-title text-white mb-2">Mapa de Intervenciones Estratégicas</h2>
+                <div class="institutional-divider"></div>
+                <p class="map-subtitle">Infraestructura y Cuadrillas de Mantenimiento Operativo</p>
+            </div>
+        </div>
+
+        <div class="map-full-container">
+            <div class="map-wrapper-large">
+                <iframe class="map-frame-full"
+                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Honduras&t=&z=8&ie=UTF8&iwloc=B&output=embed"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen>
+                </iframe>
+
+                <div class="map-legend-floating d-none d-md-block">
+                    <div class="legend-item"><span class="dot active"></span> Intervención Activa</div>
+                    <div class="legend-item"><span class="dot planned"></span> Programada</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*TERMINA MAPA DE HONDURAS :(*@
+
     @*Empieza Sobre*@
     <section class="section about-program institutional">
         <div class="container">
@@ -178,35 +208,7 @@
     @*Termina Estadisticas*@
 
 
-    @*MAPA DE HONDURAS*@
-    <section id="mapa" class="map-section-fluid container-fluid px-0">
-        <div class="map-header-institutional">
-            <div  class="container">
-                <span class="section-badge">Geolocalización en Tiempo Real</span>
-                <h2 class="section-title text-white mb-2">Mapa de Intervenciones Estratégicas</h2>
-                <div class="institutional-divider"></div>
-                <p class="map-subtitle">Infraestructura y Cuadrillas de Mantenimiento Operativo</p>
-            </div>
-        </div>
-
-        <div class="map-full-container">
-            <div class="map-wrapper-large">
-                <iframe class="map-frame-full"
-                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Honduras&t=&z=8&ie=UTF8&iwloc=B&output=embed"
-                        frameborder="0"
-                        scrolling="no"
-                        allowfullscreen>
-                </iframe>
-
-                <div class="map-legend-floating d-none d-md-block">
-                    <div class="legend-item"><span class="dot active"></span> Intervención Activa</div>
-                    <div class="legend-item"><span class="dot planned"></span> Programada</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    @*TERMINA MAPA DE HONDURAS :(*@
+  
 
     @*2 Separadores*@
     <div class="container my-3 py-4">
@@ -406,7 +408,7 @@
                        data-toggle="table"
                        data-search="true"
                        data-pagination="true"
-                       data-page-size="10"
+                       data-page-size="25"
                        data-page-list="[10, 25, 50, 100]"
                        data-show-export="true"
                        data-export-types="['csv','excel','pdf']"
@@ -765,6 +767,7 @@
 </body>
 
 </html>
+
 
 
 
