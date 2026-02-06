@@ -1,3 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-top-accent"></div>
+        <div class="container text-center">
+            <div class="header-main-content">
+                <a href="@Url.Action("Index", "Home", new { area = "" })" class="brand-title">
+                    <img src="~/Content/logoSit.png" alt="Logo SIT" style="max-height: 80px; width: auto;" />
+                </a>
+                <div class="brand-subtitle">
+                   
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container body-content">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="~/Content/logoSit.png" alt="Logo SIT" class="footer-logo-img" style="max-height: 100px; width: auto;"/>
+                        <p class="footer-about mt-3">
+                            Texto de EjemploTexto de EjemploTexto de EjemploTexto de EjemploTexto de EjemploTexto de EjemploTexto de EjemploTexto de EjemploTexto de Ejemplo
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 text-lg-center">
+                    <h5 class="footer-heading">Texto de Ejemplo</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#noticias">Texto de Ejemplo</a></li>
+                        <li><a href="#mapa">Texto de Ejemplo</a></li>
+                        <li><a href="#">Texto de Ejemplo</a></li>
+                        <li><a href="#">Texto de Ejemplo</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 text-lg-end">
+                    <h5 class="footer-heading">Contacto</h5>
+                    <p class="footer-contact-info">
+                        Texto de Ejemplo<br>
+                                        <a href="mailto:info@sit.gob.hn">Texto de Ejemplo</a>
+                    </p>
+                    <div class="social-links d-flex justify-content-lg-end gap-3 mt-3">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">X</a>
+                        <a href="#" class="social-icon">IG</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider" />
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="copyright mb-md-0">© @DateTime.Now.Year - <span class="gold-text">SIT</span> Honduras. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="footer-tagline">Texto de Ejemplo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
 @{
     ViewBag.Title = "Home Page";
 }
@@ -699,4 +785,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.26.0/dist/extensions/export/bootstrap-table-export.min.js"></script>
 
 </body>
+
 </html>
