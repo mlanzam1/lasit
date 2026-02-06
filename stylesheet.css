@@ -1440,3 +1440,62 @@ html, body {
         font-size: 2.2rem;
     }
 }
+
+/* --- AJUSTE DE ESPACIADO PARA ESCRITORIO --- */
+body {
+    /* Aumentamos el padding para que el contenido no choque con el header */
+    padding-top: 160px !important; 
+}
+
+/* --- ESTILO DEL BOTÓN DE MAPA (Anteriormente letras azules) --- */
+.btn-outline-hero {
+    background-color: transparent;
+    color: var(--white);
+    padding: 18px 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-outline-hero:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* --- CONTENEDOR DE BOTONES (Escritorio) --- */
+.hero-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* --- REGLAS ESPECÍFICAS PARA MÓVIL --- */
+@media (max-width: 768px) {
+    body {
+        padding-top: 120px !important; /* Menos espacio en móvil */
+    }
+
+    .hero-section {
+        /* Aseguramos que el contenido no quede pegado arriba en móviles */
+        padding-top: 40px; 
+        align-items: center;
+    }
+
+    .hero-buttons-container {
+        flex-direction: column;
+        align-items: stretch; /* Botones del mismo ancho */
+        gap: 15px;
+    }
+
+    .btn-hero, .btn-outline-hero {
+        width: 100%;
+        text-align: center;
+    }
+}
